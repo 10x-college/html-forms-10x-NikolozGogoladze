@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="width-device-width, initial-scale=1.0"/>
+        <title  >"Jovian Drift SOS"</title>
+        <link rel="stylesheet" href="./styles/styles.css">
+
+
+    </head>
+    <body>
+        <h1>Jovian Drift SOS</h1>
+
+        <iframe id="bg-frame" src="./styles/effect.html"></iframe>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Pilot Credentials</legend>
+
+                <label for="Pilot Name">Pilot Name</label> <br>
+                <input type="text" id="Pilot Name" name="Pilot Name" placeholder="enter name" required > <br>
+
+                <label for="Access Code">Access Code</label> <br>
+                <input type="password" id="Access Code" name="Access Code"  required> <br>
+
+                <label for="Command Email">e-mail</label><br>
+                <input type="email" name="Command Email" id="Command Email" required>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Vessel Diagnostics</legend>
+
+                <label for="Hull Damage (%)">Hull Damage (%)</label> <br>
+                <input type="number" name="hull_damage" id="Hull Damage (%)" required> <br>
+
+                <label for="Emergency Level">Emergency Level</label><br>
+                <select  id="Emergency Level" name="Emergency Level" required>
+                    <option value="low">low</option>
+                    <option value="medium">medium</option>
+                    <option value="High">high</option>
+
+                </select>
+
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Mission Log & Evidence</legend>
+
+                <label for="SOS Message">SOS Message</label><br>
+                <textarea name="SOS Message" id="SOS Message" required rows="3">
+
+                </textarea>
+            </fieldset>
+
+            <div>
+                <label for="quarantine">I agree to quarantine protocols</label><br>
+                <input type="checkbox" name="quarantine" id="quarantine" required>
+            </div>
+            <input type="submit" value="INITIATE TRANSMISSION">
+            <input type="reset" value="RESET SYSTEM">
+
+        </form>
+        <script src="./scripts/launch.js"></script>
+    </body>
+</html>
